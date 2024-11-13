@@ -1,0 +1,33 @@
+<div class="container content">
+    <!--intepolacion de variables-->
+    <h1>{{title}}</h1>
+    <form class =row g-3>
+        <div class="col-md-6">
+            <label for="name" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" name="name" #tname>
+        </div>
+        <div class="col-md-6">
+            <label for="age" class="form-label">Edad:</label>
+            <input type="text" class="form-control" name="age" #tage>
+        </div>
+        <div class="col-md-6">
+            <label for="dir" class="form-label">Dirección:</label>
+            <input type="text" class="form-control" name="dir" [(ngModel)]="dir">
+            <p class="dir-message">{{dir}}</p>
+        </div>
+        <div class="col-md-6">
+            <label for="course" class="form-label">Nombre del curso:</label>
+            <select class="form-control" name="course" id="course" #tselect>
+                <option selected>Seleccionar un curso...</option>
+                <option [value]="item" *ngFor="let item of getCourses()">
+            {{item}}</option>
+            </select>
+        </div>
+        <div class="col-12">
+            <button type="button" class="btn btn-info" (click)
+            ="getResgisterCourse(tname.value, tage.value, tselect.value)"
+            >Incribir</button>
+        </div>
+        <div class="response-message">{{getResponse()}}</div>
+    </form>
+</div>

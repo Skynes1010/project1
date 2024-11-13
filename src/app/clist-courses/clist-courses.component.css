@@ -1,0 +1,26 @@
+.lista-cursos {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.lista-cursos h2 {
+    font-size: 1.5em;
+    color: #007bff;
+}
+
+.cursos-lista {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.cursos-lista li {
+    font-size: 1em;
+    color: #333;
+    margin: 8px 0;
+}

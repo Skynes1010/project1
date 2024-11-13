@@ -1,0 +1,21 @@
+.direccion {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.direccion h2 {
+    font-size: 1.5em;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.direccion p {
+    font-size: 1em;
+    color: #333;
+    margin: 5px 0;
+}
